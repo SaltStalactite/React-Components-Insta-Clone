@@ -54,6 +54,36 @@ const dummyData = [
             },
         ],
     },
+    {
+        id: 3,
+        username: "capcom",
+        thumbnailUrl: 'https://icon2.cleanpng.com/20180320/sqe/kisspng-twitch-computer-icons-streaming-media-youtube-live-tv-twitch-icon-5ab19172461392.001176751521586546287.jpg',
+        imageUrl: 'https://images.pushsquare.com/02092aac90a64/dragons-dogma-online-shut-down.original.jpg',
+        likes: 9000,
+        timestamp: "July 15th 2017, 03:12:09 pm",
+        comments: [
+            {
+                id: 46,
+                username: "capcom",
+                text: "Never making a USA Dragon's Dogma sequel",
+            },
+            {
+                id: 47,
+                username: "disappointed_fan",
+                text: "I knew it",
+            },
+            {
+                id: 48,
+                username: "plays-jrpgs",
+                text: "download that japan proxy",
+            },
+            {
+                id: 49,
+                username: "capcom",
+                text: "Enjoy Monster Hunter sequels forever",
+            },
+        ],
+    },
 ];
 
 export default dummyData;
