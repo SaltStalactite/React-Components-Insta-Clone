@@ -17,10 +17,10 @@ const SearchBar = (props) => {
           placeholder="Search"
           onChange={props.lookUp}
         />
-        {/* <input
+        <input
           type='submit'
           value='Submit'
-        /> */}
+        />
       </form>
       <div className="social-wrapper">
         <div className="social">

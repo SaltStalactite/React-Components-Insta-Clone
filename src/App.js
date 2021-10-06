@@ -33,19 +33,14 @@ const App = () => {
      */
     // return setPosts(posts.map((post, index) => { post[index].id === postId ? { ...post[index], likes: post[index].likes + 1 } : post }))
     const likedPost = posts.map(post => {
-      if (post.id === postId) {
-        return { ...post, likes: post.likes + 1 }
-      }
-      else {
-        return post
-      }
+      return post.id === postId ? { ...post, likes: post.likes + 1 } : post
     })
     setPosts(likedPost)
   };
   const searchFor = event => {
-    event.target.preventDefault()
+    event.preventDefault()
     const newSearch = posts.filter(post => {
-      if (post === searchItem) {
+      if (post.username === searchItem) {
         return post
       }
     })
