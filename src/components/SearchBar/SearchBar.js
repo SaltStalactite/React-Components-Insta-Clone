@@ -11,10 +11,15 @@ const SearchBar = (props) => {
       <div className="social">
         <FontAwesomeIcon icon={faInstagram} />
       </div>
-      <form className="search-form">
+      <form onSubmit={props.submit} className="search-form">
         <input
           type="text"
           placeholder="Search"
+          onChange={props.lookUp}
+        />
+        <input
+          type='submit'
+          value='Submit'
         />
       </form>
       <div className="social-wrapper">
